@@ -6,7 +6,7 @@ class ComputerTurn
   }
 
   attr_reader :selection
-  
+
   def initialize
     @selection = ['r', 'p', 's'].sample
   end
@@ -15,3 +15,6 @@ class ComputerTurn
     CHARACTER_MAP[@selection]
   end
 end
+
+# require 'pry'
+# binding.pry
